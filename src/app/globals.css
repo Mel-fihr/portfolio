@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .navbar {
+    background: #111; /* Dark background for the navbar */
+  }
+  .nav-item {
+    transition: color 0.3s ease-in-out;
+  }
+  .nav-item:hover {
+    color: #64ffda; /* Teal accent for hover state */
+  }
+  .main-heading {
+    color: #64ffda; /* Teal accent for the main heading */
+  }
+  .main-content {
+    background-color: #0a0a0a; /* Very dark background for the main content */
+    color: #888; /* Grey text color for content */
+  }
+  .section {
+    padding: 50px 0;
+  }
+  .service-icon {
+    color: #64ffda; /* Teal accent for icons */
+  }
+  .team-photo {
+    filter: grayscale(100%); /* Black and white filter for team photos */
+    transition: filter 0.3s ease-in-out;
+  }
+  .team-photo:hover {
+    filter: grayscale(0);
+  }
+}

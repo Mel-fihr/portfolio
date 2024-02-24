@@ -1,0 +1,56 @@
+/* Home.module.css */
+.navbar {
+  background: #111; /* Dark background for the navbar */
+}
+
+.item {
+  color: #F1F6F9;
+
+}
+
+.maintext {
+  color: #F1F6F9; /* Teal accent for the main heading */
+}
+
+.maintext2 {
+  color: #F1F6F9; /* Teal accent for the main heading */
+}
+
+.mainContent {
+    display: flex;
+    min-height: 100vh; /* Set to the full height of the viewport */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/path-to-your-image.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-color: #0F0F0F;
+}
+
+.hello {
+    color: #394867; /* Example color: tomato red */
+  }
+
+  .buttonContainer {
+    /* This will space your buttons with a margin between */
+    gap: 15px;
+  }
+  
+  .btnPrimary {
+    background-color: #007bff;
+    color: #fff;
+    /* Add other styles for button */
+  }
+  
+  .btnSecondary {
+    background-color: #6c757d;
+    color: #fff;
+    /* Add other styles for button */
+  }
+  
+  .btnTertiary {
+    background-color: #28a745;
+    color: #fff;
+    /* Add other styles for button */
+  }
